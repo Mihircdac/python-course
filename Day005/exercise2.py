@@ -3,38 +3,88 @@ def string_display(string_input) :
     print(string_input) 
 
 def display_3_4_5_element(string_input) :
-    print("Unimplemented , Write your code here") 
+    print(string_input[2:5]) 
 
 def string_retrieve_element(string_input):
-    print("Unimplemented , Write your code here") 
+    print(string_input[1]) 
 
 def string_retrieve_elements(string_input) :
-    print("Unimplemented , Write your code here") 
+    print(string_input[1:3]) 
 
 def find_min_element(string_input) :
-    print("Unimplemented , Write your code here") 
+    print("the min num is: ",min(string_input)) 
 
 def reverse_string(string_input) :
-    print("Unimplemented , Write your code here") 
+    string_input=tuple(reversed(string_input)) 
+    print(string_input)
 
 def  find_each_character_count(string_input):
-    print("Unimplemented , Write your code here") 
+    list=[]
+    for i in string_input:
+        cnt=string_input.count(i)
+        list.append(tuple([i,cnt]))
+    print(list)
 
 def  find_character_count_greater_than_1(string_input):
-    print("Unimplemented , Write your code here") 
-
+    list=[]
+    for i in string_input:
+        cnt = string_input.count(i)
+        if cnt > 1:
+            list.append(i)
+        else:
+            print("None")
+            
+    print(list)       
+            
 def  check_palindrome(string_input):
-    print("Unimplemented , Write your code here") 
-             
+    
+        # strings=tuple(reversed(string_input))
+        # print(strings)
+    # string_input = string_input[: : -1]
+    #  print(string_input)
+    
+    
+    # strings=tuple(reversed(string_input))
+    # print(strings)
+    
+    # if strings==string_input:
+    #     print("is a palindrome")
+    # else:
+    #     print("not a palindrome")
+    
+    is_palindrome = True
+    str_1 = string_input[: : -1]
+    for i in (0 , string_input,1 ):
+        for j in (0 , str_1,1):
+          if string_input[i] == string_input[j]:
+              continue
+        else: 
+            
+            break
+          
+                  
+pass
+
+  i = 0
+  j = -1   
+  
+  if string_input(i) == string_input(j):
+            i += 1
+            j -= 1
+            print("palindrome")
+  else:
+        print("is not")
+ 
+      
 def my_string_store():
     print("\n Welcome to Our string Store !!! ")
-    string_input = input("Please enter a string that you would want to perform Operation Upon").strip()
+    string_input = input("Please enter a string that you would want to perform Operation Upon:  ").strip()
     
-    hoW_many_string = int(input("string numbers:" ))
-    for i in range(0, hoW_many_string, 1):
-        string_input = (input("Enter string:"))
+    # hoW_many_string = int(input("string numbers:" ))
+    # for i in range(0, hoW_many_string, 1):
+    #     string_input = (input("Enter string:"))
         
-    print(string_input)
+    # print(string_input)
         
 
     while(True):
