@@ -33,10 +33,11 @@ def set_minus(setA,setB) :
     print(setA) 
 
 def is_member_of_set(setB) :
-    setC=set()
-    setC.add(int(input("enter your number: ")))
-    print("SetC is memeber of setB", setC in setB)
     
+    setC =(int(input("enter your number: ")))
+    print("SetC is memeber of setB", setC in setB)
+     
+
 def set_display(setA):
 	print(len(setA)) 
 		
