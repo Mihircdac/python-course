@@ -65,8 +65,8 @@ def  check_palindrome(string_input):
                   
 pass
 
-  i = 0
-  j = -1   
+i = 0
+j = -1   
   
   if string_input(i) == string_input(j):
             i += 1
