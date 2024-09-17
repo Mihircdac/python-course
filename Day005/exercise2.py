@@ -68,11 +68,11 @@ pass
 i = 0
 j = -1   
   
-  if string_input(i) == string_input(j):
+if string_input(i) == string_input(j):
             i += 1
             j -= 1
             print("palindrome")
-  else:
+else:
         print("is not")
  
       
